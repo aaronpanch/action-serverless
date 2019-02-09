@@ -29,3 +29,41 @@ action "deploy" {
   ]
 }
 ```
+
+### Secrets
+
+Depending on the Serverless provider chosen, you'll need to supply appropriate credentials.  The above example illustrates a typical AWS scenario, but Serverless supports other cloud providers.
+
+### Environment Variables
+
+- `SERVICE_ROOT` - **Optional**.  To specify a particular subdirectory of your project that contains the Serverless service (the directory with the `serverless.yml` file) you can specify a `SERVICE_ROOT`.  This action will `cd` into that directory then execute commands.  The default root is `.` (project root).
+
+#### Example
+
+To navigate and deploy two services (in this example "Users" and "Admins") in different subdirectories:
+
+```hcl
+action "Deploy Users Service" {
+  uses = "aaronpanch/action-serverless@master"
+  args = "deploy"
+  env = {
+    SERVICE_ROOT = "users_service"
+  }
+  secrets = [
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+  ]
+}
+
+action "Deploy Admin Service" {
+  uses = "aaronpanch/action-serverless@master"
+  args = "deploy"
+  env = {
+    SERVICE_ROOT = "admin_service"
+  }
+  secrets = [
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+  ]
+}
+```
