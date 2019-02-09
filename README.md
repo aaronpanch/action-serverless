@@ -34,6 +34,8 @@ action "deploy" {
 
 Depending on the Serverless provider chosen, you'll need to supply appropriate credentials.  The above example illustrates a typical AWS scenario, but Serverless supports other cloud providers.
 
+Typically, with any cloud provider, their particular authentication environment params are **Required**
+
 ### Environment Variables
 
 - `SERVICE_ROOT` - **Optional**.  To specify a particular subdirectory of your project that contains the Serverless service (the directory with the `serverless.yml` file) you can specify a `SERVICE_ROOT`.  This action will `cd` into that directory then execute commands.  The default root is `.` (project root).
