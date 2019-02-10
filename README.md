@@ -4,9 +4,9 @@ This Action wraps the [Serverless Framework](https://serverless.com/framework/do
 
 ## Usage
 
-Suppose your provider of choice were Amazon AWS. A workflow could look as follows:
+You'll first have to have a Serverless project as outlined in Serverless's [Getting Started](https://serverless.com/framework/docs/getting-started/).  Suppose your provider of choice were Amazon AWS. A workflow could look as follows to install dependencies, and deploy to a Lambda function.
 
-_Note:_ We're using the NPM Action to install project dependencies.
+_Note:_ We're first using the NPM Action to install project dependencies, then running `serverless deploy` via the action.
 
 ```workflow
 workflow "Deploy via Serverless" {
@@ -34,7 +34,7 @@ action "deploy" {
 
 Depending on the Serverless provider chosen, you'll need to supply appropriate credentials.  The above example illustrates a typical AWS scenario, but Serverless supports other cloud providers.
 
-Typically, with any cloud provider, their particular authentication environment params are **Required**
+Typically, with any cloud provider, their particular authentication environment params are **Required**.
 
 ### Environment Variables
 
