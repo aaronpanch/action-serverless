@@ -1,0 +1,11 @@
+name: GitHub Action for Serverless Framework
+description: Wraps the Serverless CLI
+author: Aaron Panchal
+
+branding:
+  color: gray-dark
+  icon: zap
+
+runs:
+  using: docker
+  image: Dockerfile
