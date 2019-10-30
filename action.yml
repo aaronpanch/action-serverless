@@ -6,6 +6,13 @@ branding:
   color: gray-dark
   icon: zap
 
+inputs:
+  framework-version:
+    description: "Serverless Framework Version"
+    required: true
+    default: "1.55.1"
+
 runs:
   using: docker
-  image: Dockerfile
+  image: docker://node:lts-slim
+  entrypoint: ./entrypoint.sh

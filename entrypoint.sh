@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 
-serverless $*
+yarn global install serverless@$INPUT_FRAMEWORK_VERSION
