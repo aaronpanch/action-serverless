@@ -19,7 +19,7 @@ In addition, v1 offered a `SERVICE_ROOT` environment variable to configure the p
 You'll first have to have a Serverless project as outlined in Serverless's [Getting Started](https://serverless.com/framework/docs/getting-started/). Suppose your provider of choice were Amazon AWS. A workflow could look as follows to checkout your code, install dependencies, and deploy to a Lambda function on AWS.
 
 ```yaml
-name: Deploy Services
+name: Deploy Service
 
 on:
   push:
