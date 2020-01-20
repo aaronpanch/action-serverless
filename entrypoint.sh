@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
-yarn global install serverless@$INPUT_FRAMEWORK_VERSION
+ROOT=${SERVICE_ROOT:-.}
 
+cd $ROOT
 serverless $*
