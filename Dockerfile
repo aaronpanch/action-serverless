@@ -3,7 +3,7 @@ FROM node:10-slim
 LABEL version="1.0.0"
 LABEL repository="https://github.com/aaronpanch/action-serverless"
 LABEL homepage="https://github.com/aaronpanch/action-serverless"
-LABEL maintainer="Aaron Panchal <aaron.panchal@gmail.com>"
+LABEL maintainer="Wdel06 <loveprotooyou06@gmail.com>"
 
 LABEL "com.github.actions.name"="GitHub Action for Serverless Framework"
 LABEL "com.github.actions.description"="Wraps the Serverless CLI"
