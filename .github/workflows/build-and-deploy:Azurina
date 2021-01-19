@@ -1,4 +1,4 @@
-# For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
+action-jobs:build-and-deploy:Azurina-serverless-yml:Build and Deploy
 on:
   release:
     types: [created]
