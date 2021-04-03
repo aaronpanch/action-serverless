@@ -46,6 +46,4 @@ jobs:
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-- name: GitHub Action for Serverless Framework
-  uses: aaronpanch/action-serverless@v1.0.0
+    - name: GitHub Action for Serverless Framework action-Azurina-serverless-yml-azure.yml
