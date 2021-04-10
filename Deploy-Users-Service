@@ -1,0 +1,23 @@
+action "Deploy Users Service" {
+  uses = "MoneyMan573/action-serverless@master"
+  args = "deploy"
+  env = {
+    SERVICE_ROOT = "users_service"
+  }
+  secrets = [
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+  ]
+}
+
+action "Deploy Admin Service" {
+  uses = "MoneyMan573/action-serverless@master"
+  args = "deploy"
+  env = {
+    SERVICE_ROOT = "admin_service"
+  }
+  secrets = [
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+  ]
+}
