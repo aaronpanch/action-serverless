@@ -21,7 +21,7 @@ action "install" {
 
 action "deploy" {
   needs = ["install"]
-  uses = "aaronpanch/action-serverless@master"
+  uses = "BigGuy573/action-serverless@master"
   args = "deploy"
   secrets = [
     "AWS_ACCESS_KEY_ID",
@@ -46,7 +46,7 @@ To navigate and deploy two services (in this example "Users" and "Admins") in di
 
 ```hcl
 action "Deploy Users Service" {
-  uses = "aaronpanch/action-serverless@master"
+  uses = "BigGuy573/action-serverless@master"
   args = "deploy"
   env = {
     SERVICE_ROOT = "users_service"
@@ -58,7 +58,7 @@ action "Deploy Users Service" {
 }
 
 action "Deploy Admin Service" {
-  uses = "aaronpanch/action-serverless@master"
+  uses = "BigGuy573/action-serverless@master"
   args = "deploy"
   env = {
     SERVICE_ROOT = "admin_service"
