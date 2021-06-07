@@ -1,25 +1,48 @@
-'#
-'/
-'bin
-'/
-'sh
-':/$
+'
+#
+'
+/
+'
+bin
+'
+/
+'
+sh
+'
+:
+	/
+	$
 
-'ROOT
-'=
-'$
-'{
-'SERVICE
+'
+ROOT
+'
+=
+'
+$
+'
+{
+'
+	SERVICE
 	'_
-	'ROOT
-':
-'-
-'.
-'}
+	'
+	ROOT
+'
+	:
+'
+	-
+'
+	.
+'
+}
 
-'cd 
-'$
-'ROOT
-'serverless 
-'$
+'
+cd 
+'
+$
+'
+ROOT
+'
+serverless 
+'
+$
 
