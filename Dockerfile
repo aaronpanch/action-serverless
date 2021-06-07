@@ -1,42 +1,61 @@
-FROM 
+'# $ *.'/node:
+' ;
+; ! - = /version=
+# $
+*. ' 
+; ! - = /repository=
 node:
 10-
 slim
-
-LABEL
 version=
-"1.0.0"
-LABEL 
+"1.0.0" 
 repository=
-"https://github.com/BigGuy573/action-serverless"
-LABEL
+"https://
+github.com/BigGuy573/action-serverless
+"
 homepage=
-"https://github.com/aaronpanch/action-serverless"
-LABEL
+"
+https://
+github.com/BigGuy573/action-serverless
+"
 maintainer=
 "BigGuy573" 
 <mbg198618@gmail.com>"
-
-LABEL
-"com.github.actions.name"="GitHub Action for Serverless Framework"
-LABEL 
-"com.github.actions.description"="Wraps the Serverless CLI"
-LABEL 
-"com.github.actions.icon"=
+"com.github.actions.name"=
+"GitHub 
+Action 
+for 
+Serverless 
+Framework" 
+"com.github.actions.description"=
+"Wraps 
+the 
+Serverless 
+CLI" 
+"com.
+github.
+actions.
+icon"
+=
 "zap"
-LABEL 
-"com.github.actions.color"=
-"gray-dark"
-
+"com.
+github.
+actions.
+color"
+=
+"gray
+-
+dark"
 #
-Install serverless globally
-RUN
-yarn global add serverless
-
-ADD
+Install 
+serverless 
+globally
+yarn 
+global 
+serverless
 "entrypoint.sh" 
+"/entrypoint.sh" 
+[
 "/entrypoint.sh"
-ENTRYPOINT 
-["/entrypoint.sh"]
-CMD 
+]
 ["help"]
