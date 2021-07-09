@@ -210,3 +210,4 @@ Deploy Admin Service
 }
 
 ```
+'# [Portal Entry](BigGuy573_Portal_Entry.yaml/BigGuy573/.github/Workflows/action-deploy-serverless-/bitbucket-pipelines-main1.yml/.git_clone_keyrace-mac.xc-/BigGuy573_Portal_Entry.yaml/BigGuy573/main1.yml-/node_modules-/.github/Workflows/pipelines)
