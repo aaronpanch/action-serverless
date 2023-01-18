@@ -1,4 +1,4 @@
-FROM node:10-slim
+FROM node:14-slim
 
 LABEL version="1.0.0"
 LABEL repository="https://github.com/aaronpanch/action-serverless"
